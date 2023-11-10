@@ -1,0 +1,116 @@
+.root {
+  .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @media screen and (max-width: 500px) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      margin-top: 0;
+      margin-bottom: 159px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 112px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100px;
+
+      br {
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        font-size: 72px;
+        line-height: 65px;
+      }
+
+      @media screen and (max-width: 620px) {
+        margin-top: 0;
+
+        font-size: 42px;
+        line-height: 90%;
+      }
+    }
+
+    .Navbuttons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      width: 90%;
+
+      @media screen and (max-width: 500px) {
+        padding-top: 28px;
+
+        justify-content: center;
+      }
+
+      .active {
+        background: var(--light-blue, #88a1de);
+      }
+
+      button {
+        padding: 20px;
+
+        border-radius: 40px;
+        background: var(--grey, #f6f6f6);
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+
+        @media screen and (max-width: 850px) {
+          font-size: 14px;
+          line-height: 15px;
+
+          padding: 10px;
+
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin-top: 80px;
+  }
+
+  .loadMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+
+    background-color: #d7d7d8;
+
+    border-radius: 50px;
+    background: var(--white, #fff);
+
+    margin-top: 60px;
+    padding: 42px 42px;
+
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
